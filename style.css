@@ -1,0 +1,233 @@
+html {
+  font-size: 22px;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* nav-bar  */
+nav {
+  top: 18px;
+  z-index: 100;
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: hsla(0, 0%, 100%, 0.8) !important;
+  position: fixed;
+  width: 70%;
+  left: 15%;
+  padding: 0 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav .buttn-l a {
+  color: #252f40;
+  font-size: 0.875rem;
+}
+nav ul li a {
+  color: #252f40;
+  font-size: 0.875rem;
+}
+nav ul li a i {
+  margin: 0 3px;
+  font-size: 0.5rem;
+}
+
+/* btn  */
+.buttn-r a {
+  background-image: linear-gradient(310deg, #7928ca, #ff0080);
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
+  background-size: 150%;
+  background-position-x: 25%;
+  padding: 2px 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* header begin  */
+.header-1 {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.bgg-gradiant {
+  background-image: linear-gradient(310deg, #7928ca, #ff0080);
+  background-size: cover;
+}
+.text {
+  z-index: 99;
+  margin: 200px 0;
+}
+.mark {
+  position: absolute;
+  background-position: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/* section 1  */
+
+.section_1 {
+  top: -145px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section_1 .box-shado {
+  box-shadow: inset 0 0 1px 1px hsla(0, 0%, 100%, 0.9),
+    0 20px 27px 0 rgba(0, 0, 0, 0.05) !important;
+  border-radius: 20px;
+}
+
+.section_1 .blur {
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: hsla(0, 0%, 100%, 0.8) !important;
+}
+.section_1 p {
+  font-size: 0.875rem;
+}
+
+.section_1 hr.vertical {
+  position: absolute;
+  background-color: transparent;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 1px;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.4),
+    transparent
+  );
+}
+
+/* section -2 */
+
+.section_2 .icon i {
+  color: #cb0c9f !important ;
+  font-size: 45px;
+}
+
+.section_2 .cardd {
+  background: url(https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-working.jpg)
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+  margin: 0 50px;
+  z-index: 4;
+}
+.section_2 .cardd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#7928caa8, #ff008094);
+  border-radius: 1rem;
+  z-index: -1;
+}
+.section_2 .icon-qube i {
+  font-size: 45px;
+}
+
+/* --------------------------------------------------------------------- */
+/* header two */
+.bg-gradiants {
+  background-image: linear-gradient(140deg, #7928ca, #ff0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------------------- */
+/* section three  */
+
+.section-three .sec-3-text {
+  position: sticky;
+}
+.section-three .sec-3-img img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+.section-three .sec-3-img img:hover {
+  transform: perspective(999px) rotateX(7deg) translate3d(0, -4px, 5px);
+}
+.sec-info p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.borderraduis {
+  border-radius: 1rem;
+}
+.margin-top {
+  margin-top: -9rem !important;
+}
+.mt-top-10 {
+  margin-top: 5rem !important;
+  background: #212529 !important;
+}
+/* ------------------------------------------------------ */
+/* section -5  */
+.section-five .bgimages {
+  background: url("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.section-five .bgimages::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+/* responsive  */
+
+@media only screen and (max-width: 1200px) {
+  .margin-top {
+    margin-top: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section_one_card {
+    flex-direction: column;
+  }
+  .menu {
+    display: none;
+  }
+}
